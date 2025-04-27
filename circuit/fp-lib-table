@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "CherryMX_KailhSocket")(type "KiCad")(uri "${KIPRJMOD}/libs/cherry-mx/footprints/CherryMX_KailhSocket.pretty")(options "")(descr ""))
+)

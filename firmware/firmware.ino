@@ -1,51 +1,15 @@
 #include <Keyboard.h>
 
-// Define whether the special key is present
-#define HAS_SPECIAL_KEY
-#define SPECIAL_KEY_MODE 0 // 0 = NO, 1 = NC
-// Define whether mode switch functionality is present
-// #define HAS_MODE_SWITCH
+#include "gpio.h"
+#include "settings.h"
 
 // Variable to keep track of the current macro mode
 int macro_mode = 0;
-
-#define PIN_2 2
-#define PIN_3 3
-#define PIN_4 4
-#define PIN_5 5
-#define PIN_6 6
-#define PIN_7 7
-#define PIN_8 8
-#define PIN_9 9
-#define PIN_10 10
-
-#define PIN_14 14
-#define PIN_15 15
-#define PIN_16 16
-
-// Number of macro keys and their pin mappings without the special key
-#define MACRO_KEY_CNT 12
-const int MACRO_KEY_PINS[] = {PIN_2, PIN_3, PIN_4, PIN_5, PIN_6, PIN_7,
-                              PIN_8, PIN_9, PIN_10, PIN_16, PIN_14, PIN_15};
-
-// Key mappings for the macro keys in primary mode without the special key
-const int MACRO_KEY_MAP[] = {KEY_F13, KEY_F14, KEY_F15, KEY_F16,
-                             KEY_F17, KEY_F18, KEY_F19, KEY_F20,
-                             KEY_F21, KEY_F22, KEY_F23, KEY_F24};
-
-// Key mappings for the macro keys in secondary mode without the special key
-const int MACRO_KEY_MAP_SECONDARY[] = {KEY_F1, KEY_F2,  KEY_F3,  KEY_F4,
-                                       KEY_F5, KEY_F6,  KEY_F7,  KEY_F8,
-                                       KEY_F9, KEY_F10, KEY_F11, KEY_F12};
 
 // Array to store the previous state of each key
 bool prev_key_states[MACRO_KEY_CNT];
 
 #ifdef HAS_SPECIAL_KEY
-
-// Pin and key mapping for the special key
-#define SPECIAL_KEY_PIN PIN_A0
-#define SPECIAL_KEY_MAP KEY_F12
 
 bool prev_special_key_state;
 
@@ -111,7 +75,7 @@ void pressKey(bool prev_state, bool curr_state, int key) {
 void loop() {
   // Select the appropriate key mapping based on the current macro mode
   const int *key_map =
-      macro_mode == 0 ? MACRO_KEY_MAP : MACRO_KEY_MAP_SECONDARY;
+      macro_mode == 0 ? MACRO_KEY_MAP : MACRO_KEY_MAP_ALT;
 
   // Check each macro key for a press or release
   for (int pin = 0; pin < MACRO_KEY_CNT; pin++) {
@@ -127,7 +91,11 @@ void loop() {
 
     bool current_state = digitalRead(SPECIAL_KEY_PIN);
 
-    pressKey(prev_special_key_state ^ SPECIAL_KEY_MODE, current_state ^ SPECIAL_KEY_MODE, SPECIAL_KEY_MAP);
+    pressKey(
+        prev_special_key_state ^ SPECIAL_KEY_MODE, 
+        current_state ^ SPECIAL_KEY_MODE, 
+        macro_mode == 0 ? SPECIAL_KEY : SPECIAL_KEY_ALT
+    );
 
     // Update the previous state of the key
     prev_special_key_state = current_state;

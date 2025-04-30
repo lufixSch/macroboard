@@ -5,130 +5,6 @@
 	(uuid "eb2ff33f-8c2d-40be-bc06-8483c3a89847")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Device:R"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "MCU_Microchip_ATmega:ATmega32U4-A"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1478,12 +1354,6 @@
 		(uuid "0449dfde-18bc-4530-af05-7fab2261adf3")
 	)
 	(junction
-		(at 57.15 161.29)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "40b20f06-4c70-4af5-9b64-b0bae11aec0d")
-	)
-	(junction
 		(at 214.63 124.46)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1691,6 +1561,16 @@
 	)
 	(wire
 		(pts
+			(xy 64.77 161.29) (xy 66.04 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d41829d-e078-4e5b-b2e3-0bd8d8e3fdc4")
+	)
+	(wire
+		(pts
 			(xy 63.5 107.95) (xy 66.04 107.95)
 		)
 		(stroke
@@ -1698,16 +1578,6 @@
 			(type default)
 		)
 		(uuid "900e71a5-9425-4cd5-9468-8383bda7c6d2")
-	)
-	(wire
-		(pts
-			(xy 57.15 161.29) (xy 66.04 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9242feb8-9ba4-4b2e-a29d-d600b123c387")
 	)
 	(wire
 		(pts
@@ -1751,6 +1621,16 @@
 	)
 	(wire
 		(pts
+			(xy 50.8 161.29) (xy 52.07 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3b7a098-f813-4947-aa16-28496a016762")
+	)
+	(wire
+		(pts
 			(xy 110.49 88.9) (xy 113.03 88.9)
 		)
 		(stroke
@@ -1771,26 +1651,6 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 152.4) (xy 57.15 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aa419f94-20a9-4a62-b4ca-c40850458bd8")
-	)
-	(wire
-		(pts
-			(xy 57.15 160.02) (xy 57.15 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "accd736c-2dc8-44e3-ae0b-f46d8df9e3d7")
-	)
-	(wire
-		(pts
 			(xy 213.36 123.19) (xy 213.36 124.46)
 		)
 		(stroke
@@ -1798,16 +1658,6 @@
 			(type default)
 		)
 		(uuid "ad39f981-f7e0-4c49-8371-4190043b0329")
-	)
-	(wire
-		(pts
-			(xy 50.8 161.29) (xy 57.15 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "af2c6022-0cf7-41e2-b717-04c2f4c0fec3")
 	)
 	(wire
 		(pts
@@ -2406,141 +2256,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 57.15 156.21 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "497d7b2b-9045-441c-ae10-027de3b573a2")
-		(property "Reference" "R13"
-			(at 59.69 154.9399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 59.69 157.4799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 55.372 156.21 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 57.15 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 57.15 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a864eab9-9b83-4311-ae2b-173910bed6cb")
-		)
-		(pin "2"
-			(uuid "3e891df1-09a1-4971-96f3-907fc570980b")
-		)
-		(instances
-			(project "macroboard"
-				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847"
-					(reference "R13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 57.15 151.13 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "64bc22a3-8b39-4a7b-adca-c27ca51d994d")
-		(property "Reference" "#PWR025"
-			(at 57.15 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 57.15 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 57.15 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 57.15 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 57.15 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "318d56e2-5c0c-43f4-8287-0bc8197c9e5c")
-		)
-		(instances
-			(project "macroboard"
-				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847"
-					(reference "#PWR025")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "MCU_Microchip_ATmega:ATmega32U4-A")
 		(at 215.9 77.47 0)
 		(unit 1)
@@ -2568,7 +2283,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MCUs:Arduino Pro Micro"
+		(property "Footprint" "custom:Arduino Pro Micro"
 			(at 215.9 77.47 0)
 			(effects
 				(font
@@ -3084,7 +2799,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "custom:AUX Jack 6.3mm External"
 			(at 45.72 156.21 0)
 			(effects
 				(font
@@ -3451,6 +3166,69 @@
 			(project "macroboard"
 				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847"
 					(page "22")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 52.07 159.385)
+		(size 12.7 3.81)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "62c06de1-5278-42ed-9583-d5ca24f3899f")
+		(property "Sheetname" "Debounce13"
+			(at 52.07 158.6734 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "switch_debounce.kicad_sch"
+			(at 52.07 163.7796 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "IN" input
+			(at 52.07 161.29 180)
+			(uuid "d747cd0c-07dc-4920-bf86-8d7c63c994e2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "OUT" input
+			(at 64.77 161.29 0)
+			(uuid "9e74b66f-9ffc-4dff-a9c5-dd249b29f099")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "macroboard"
+				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847"
+					(page "28")
 				)
 			)
 		)

@@ -420,7 +420,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "83fdf8a4-071c-4bec-a0be-6203a24a3922")
-		(property "Reference" "#PWR"
+		(property "Reference" "#PWR0101"
 			(at 87.63 78.74 0)
 			(effects
 				(font
@@ -499,6 +499,10 @@
 				)
 				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847/8aa68bc2-e0e1-4243-99b1-418f7cfb0f20"
 					(reference "#PWR012")
+					(unit 1)
+				)
+				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847/8c8593f3-1b42-4d6d-b007-0cc7942c4f46"
+					(reference "#PWR0101")
 					(unit 1)
 				)
 				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847/9b368444-a711-44fb-b6d5-cf9ce120b944"

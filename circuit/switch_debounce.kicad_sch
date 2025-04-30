@@ -872,6 +872,10 @@
 		)
 		(instances
 			(project "macroboard"
+				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847/62c06de1-5278-42ed-9583-d5ca24f3899f"
+					(reference "JP1")
+					(unit 1)
+				)
 				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847/0bc85202-309d-4f20-bdff-13cfb9a79971/09e1ba93-ee93-4269-aa94-889dde94244b"
 					(reference "JP7")
 					(unit 1)
@@ -987,6 +991,10 @@
 		)
 		(instances
 			(project "macroboard"
+				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847/62c06de1-5278-42ed-9583-d5ca24f3899f"
+					(reference "R3")
+					(unit 1)
+				)
 				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847/0bc85202-309d-4f20-bdff-13cfb9a79971/09e1ba93-ee93-4269-aa94-889dde94244b"
 					(reference "R27")
 					(unit 1)
@@ -1105,6 +1113,10 @@
 		)
 		(instances
 			(project "macroboard"
+				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847/62c06de1-5278-42ed-9583-d5ca24f3899f"
+					(reference "R2")
+					(unit 1)
+				)
 				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847/0bc85202-309d-4f20-bdff-13cfb9a79971/09e1ba93-ee93-4269-aa94-889dde94244b"
 					(reference "R26")
 					(unit 1)
@@ -1219,6 +1231,10 @@
 		)
 		(instances
 			(project "macroboard"
+				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847/62c06de1-5278-42ed-9583-d5ca24f3899f"
+					(reference "#PWR0102")
+					(unit 1)
+				)
 				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847/0bc85202-309d-4f20-bdff-13cfb9a79971/09e1ba93-ee93-4269-aa94-889dde94244b"
 					(reference "#PWR043")
 					(unit 1)
@@ -1337,6 +1353,10 @@
 		)
 		(instances
 			(project "macroboard"
+				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847/62c06de1-5278-42ed-9583-d5ca24f3899f"
+					(reference "C14")
+					(unit 1)
+				)
 				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847/0bc85202-309d-4f20-bdff-13cfb9a79971/09e1ba93-ee93-4269-aa94-889dde94244b"
 					(reference "C7")
 					(unit 1)
@@ -1451,6 +1471,10 @@
 		)
 		(instances
 			(project "macroboard"
+				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847/62c06de1-5278-42ed-9583-d5ca24f3899f"
+					(reference "#PWR0103")
+					(unit 1)
+				)
 				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847/0bc85202-309d-4f20-bdff-13cfb9a79971/09e1ba93-ee93-4269-aa94-889dde94244b"
 					(reference "#PWR044")
 					(unit 1)

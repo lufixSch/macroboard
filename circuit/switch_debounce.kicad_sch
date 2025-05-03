@@ -865,15 +865,23 @@
 			)
 		)
 		(pin "2"
-			(uuid "59564db7-d927-4ff4-a948-ea09a710cf60")
+			(uuid "db5ce32f-3567-4a2f-91ed-21549e4c48c5")
 		)
 		(pin "1"
-			(uuid "4544b560-c5e1-47dd-bfda-a0a16642556a")
+			(uuid "f1aa6824-cf8d-4431-97e4-b077f4ea7c41")
 		)
 		(instances
 			(project "macroboard"
+				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847/50356db0-e990-49f0-99c2-0c218888622f"
+					(reference "JP16")
+					(unit 1)
+				)
 				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847/62c06de1-5278-42ed-9583-d5ca24f3899f"
 					(reference "JP1")
+					(unit 1)
+				)
+				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847/98658c34-69f3-47b5-9f08-4f60c30ae087"
+					(reference "JP15")
 					(unit 1)
 				)
 				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847/0bc85202-309d-4f20-bdff-13cfb9a79971/09e1ba93-ee93-4269-aa94-889dde94244b"
@@ -984,15 +992,23 @@
 			)
 		)
 		(pin "2"
-			(uuid "789b76dd-a8a0-4628-85a9-94ae87c7b43d")
+			(uuid "40a3a268-078a-477c-957c-4378d6de8bc8")
 		)
 		(pin "1"
-			(uuid "a69f6f05-ac16-4cd4-8990-0a452f26185a")
+			(uuid "007f4cf4-70aa-463a-ba22-9817f42d2210")
 		)
 		(instances
 			(project "macroboard"
+				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847/50356db0-e990-49f0-99c2-0c218888622f"
+					(reference "R7")
+					(unit 1)
+				)
 				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847/62c06de1-5278-42ed-9583-d5ca24f3899f"
 					(reference "R3")
+					(unit 1)
+				)
+				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847/98658c34-69f3-47b5-9f08-4f60c30ae087"
+					(reference "R5")
 					(unit 1)
 				)
 				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847/0bc85202-309d-4f20-bdff-13cfb9a79971/09e1ba93-ee93-4269-aa94-889dde94244b"
@@ -1106,15 +1122,23 @@
 			)
 		)
 		(pin "2"
-			(uuid "f9e166e1-3f39-4f0b-8459-3b3a1745d411")
+			(uuid "558b6669-1ba4-498d-9ebd-7028bf9d578e")
 		)
 		(pin "1"
-			(uuid "4a3a01a0-946d-434e-9cad-6f71f712a56a")
+			(uuid "f0f2e3e6-0982-4fe6-bc6a-98d462a1f5dd")
 		)
 		(instances
 			(project "macroboard"
+				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847/50356db0-e990-49f0-99c2-0c218888622f"
+					(reference "R6")
+					(unit 1)
+				)
 				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847/62c06de1-5278-42ed-9583-d5ca24f3899f"
 					(reference "R2")
+					(unit 1)
+				)
+				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847/98658c34-69f3-47b5-9f08-4f60c30ae087"
+					(reference "R4")
 					(unit 1)
 				)
 				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847/0bc85202-309d-4f20-bdff-13cfb9a79971/09e1ba93-ee93-4269-aa94-889dde94244b"
@@ -1227,12 +1251,20 @@
 			)
 		)
 		(pin "1"
-			(uuid "ffa52847-543f-4328-90a2-953bfa0f6dae")
+			(uuid "f01da296-fbe7-4a91-92c3-cd4242376c86")
 		)
 		(instances
 			(project "macroboard"
+				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847/50356db0-e990-49f0-99c2-0c218888622f"
+					(reference "#PWR0106")
+					(unit 1)
+				)
 				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847/62c06de1-5278-42ed-9583-d5ca24f3899f"
 					(reference "#PWR0102")
+					(unit 1)
+				)
+				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847/98658c34-69f3-47b5-9f08-4f60c30ae087"
+					(reference "#PWR0104")
 					(unit 1)
 				)
 				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847/0bc85202-309d-4f20-bdff-13cfb9a79971/09e1ba93-ee93-4269-aa94-889dde94244b"
@@ -1346,15 +1378,23 @@
 			)
 		)
 		(pin "2"
-			(uuid "f9f8758b-18f8-4149-a7f6-1cbc487aeb65")
+			(uuid "463f7364-13c0-4732-b92f-374f74eb3b8c")
 		)
 		(pin "1"
-			(uuid "12a177a2-579c-4ead-b0ef-b3c022c3b7b1")
+			(uuid "1463c206-e21b-4102-89f5-0161b25c7259")
 		)
 		(instances
 			(project "macroboard"
+				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847/50356db0-e990-49f0-99c2-0c218888622f"
+					(reference "C16")
+					(unit 1)
+				)
 				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847/62c06de1-5278-42ed-9583-d5ca24f3899f"
 					(reference "C14")
+					(unit 1)
+				)
+				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847/98658c34-69f3-47b5-9f08-4f60c30ae087"
+					(reference "C15")
 					(unit 1)
 				)
 				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847/0bc85202-309d-4f20-bdff-13cfb9a79971/09e1ba93-ee93-4269-aa94-889dde94244b"
@@ -1467,12 +1507,20 @@
 			)
 		)
 		(pin "1"
-			(uuid "4cdc44e6-67d9-4078-a637-578564948dfc")
+			(uuid "4df50899-b26a-4eb1-b93c-3d663fc11a2a")
 		)
 		(instances
 			(project "macroboard"
+				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847/50356db0-e990-49f0-99c2-0c218888622f"
+					(reference "#PWR0107")
+					(unit 1)
+				)
 				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847/62c06de1-5278-42ed-9583-d5ca24f3899f"
 					(reference "#PWR0103")
+					(unit 1)
+				)
+				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847/98658c34-69f3-47b5-9f08-4f60c30ae087"
+					(reference "#PWR0105")
 					(unit 1)
 				)
 				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847/0bc85202-309d-4f20-bdff-13cfb9a79971/09e1ba93-ee93-4269-aa94-889dde94244b"

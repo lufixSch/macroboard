@@ -1783,6 +1783,16 @@
 	)
 	(wire
 		(pts
+			(xy 186.69 39.37) (xy 186.69 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "718c88e5-e6f4-4bcb-a88c-f89b6e648a05")
+	)
+	(wire
+		(pts
 			(xy 44.45 90.17) (xy 46.99 90.17)
 		)
 		(stroke
@@ -1890,6 +1900,16 @@
 			(type default)
 		)
 		(uuid "a9bdd321-d8a5-4e65-a7f4-581e5aa18ab0")
+	)
+	(wire
+		(pts
+			(xy 190.5 39.37) (xy 186.69 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab2a1dbe-01a6-4d2b-b6ce-76e0c1fac94f")
 	)
 	(wire
 		(pts
@@ -3112,6 +3132,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 186.69 41.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9e8c51bf-77f7-4067-8cec-78a78f551cd3")
+		(property "Reference" "#PWR030"
+			(at 186.69 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 186.69 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 186.69 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.69 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 186.69 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a01f4ed2-cfcf-4d70-a6c2-ee5582b7ca09")
+		)
+		(instances
+			(project "macroboard"
+				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847"
+					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:MountingHole")
 		(at 135.89 30.48 0)
 		(unit 1)
@@ -3366,6 +3452,74 @@
 			(project ""
 				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847"
 					(reference "SW13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 195.58 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f8db6510-9af6-4d9b-9bc8-761f8f14ff4a")
+		(property "Reference" "RESET"
+			(at 195.58 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 195.58 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
+			(at 195.58 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 195.58 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 195.58 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "06ed0ccc-262c-4015-9622-9b9c5f925680")
+		)
+		(pin "2"
+			(uuid "7f94ac43-0f4c-415f-90f1-2c25d4612e89")
+		)
+		(instances
+			(project "macroboard"
+				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847"
+					(reference "RESET")
 					(unit 1)
 				)
 			)

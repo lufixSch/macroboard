@@ -3467,7 +3467,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f8db6510-9af6-4d9b-9bc8-761f8f14ff4a")
-		(property "Reference" "RESET"
+		(property "Reference" "RESET1"
 			(at 195.58 31.75 0)
 			(effects
 				(font
@@ -3519,7 +3519,7 @@
 		(instances
 			(project "macroboard"
 				(path "/eb2ff33f-8c2d-40be-bc06-8483c3a89847"
-					(reference "RESET")
+					(reference "RESET1")
 					(unit 1)
 				)
 			)

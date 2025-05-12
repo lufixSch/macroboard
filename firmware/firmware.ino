@@ -13,13 +13,14 @@ bool prev_key_states[MACRO_KEY_CNT];
 
 bool prev_special_key_state;
 
+int special_key_polarity = 0;
+int special_key_polarity_mode = 0;
+int special_key_mode = 0;
+
 #endif
 
 
 #ifdef HAS_MODE_SWITCH
-
-// Pin for the mode switch
-#define MODE_SWITCH_PIN PF6
 
 // Variable to track if the mode switch is currently pressed
 bool mode_switch_is_pressed = false;
@@ -29,6 +30,7 @@ bool mode_switch_is_pressed = false;
 
 // Setup function to initialize pins and start keyboard communication
 void setup() {
+  delay(100); // Ensure stable states
 
   // Set each macro key pin as an input with a pull-up resistor
   for (int pin = 0; pin < MACRO_KEY_CNT; pin++) {
@@ -42,6 +44,13 @@ void setup() {
   pinMode(SPECIAL_KEY_PIN, INPUT_PULLUP);
   prev_special_key_state = digitalRead(SPECIAL_KEY_PIN);
 
+  special_key_polarity = SPECIAL_KEY_POLARITY >= 0 ? SPECIAL_KEY_POLARITY : prev_special_key_state;
+
+  pinMode(SPECIAL_KEY_POLARITY_SWITCH_PIN, INPUT_PULLUP);
+  special_key_polarity_mode = !digitalRead(SPECIAL_KEY_POLARITY_SWITCH_PIN);
+
+  pinMode(SPECIAL_KEY_MODE_SWITCH_PIN, INPUT_PULLUP);
+  special_key_mode = !digitalRead(SPECIAL_KEY_MODE_SWITCH_PIN);
 #endif
 
 
@@ -71,6 +80,8 @@ void pressKey(bool prev_state, bool curr_state, int key) {
   }
 }
 
+
+
 // Main loop to handle key presses and macro modes
 void loop() {
   // Select the appropriate key mapping based on the current macro mode
@@ -89,16 +100,20 @@ void loop() {
 
 #ifdef HAS_SPECIAL_KEY
 
-    bool current_state = digitalRead(SPECIAL_KEY_PIN);
+  special_key_polarity_mode = !digitalRead(SPECIAL_KEY_POLARITY_SWITCH_PIN);
+  special_key_mode = !digitalRead(SPECIAL_KEY_MODE_SWITCH_PIN);
 
-    pressKey(
-        prev_special_key_state ^ SPECIAL_KEY_MODE, 
-        current_state ^ SPECIAL_KEY_MODE, 
-        macro_mode == 0 ? SPECIAL_KEY : SPECIAL_KEY_ALT
-    );
+  bool current_state = digitalRead(SPECIAL_KEY_PIN);
+  bool polarity = special_key_polarity ^ special_key_polarity_mode;
 
-    // Update the previous state of the key
-    prev_special_key_state = current_state;
+  pressKey(
+    prev_special_key_state ^ polarity, 
+    current_state ^ polarity, 
+    special_key_mode == 0 ? SPECIAL_KEY : SPECIAL_KEY_ALT
+  );
+
+  // Update the previous state of the key
+  prev_special_key_state = current_state;
 
 #endif
 
